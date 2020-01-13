@@ -29,12 +29,14 @@
             <button value="." id="btnNumeroPonto" onclick="btnClicado(this.id)">.</button>
         </div>
         <div id="operadores">
-            <button value="+" id="btnSoma" onclick="btnOperadores()">+</button>
-            <button value="-" id="btnSubtracao" onclick="btnOperadores()">-</button>
-            <button value="/" id="btnDivisao" onclick="btnOperadores()">/</button>
-            <button value="*" id="btnMultiplicacao" onclick="btnOperadores()">*</button>
-            <button value="%" id="btnPorcentagem" onclick="btnOperadores()">%</button>
-            <button value="=" id="btnResultado" onclick="btnOperadores()">=</button>
+            <button value="(" id="btnOpParentesesAbre" onclick="btnClicado(this.id)">(</button>
+            <button value=")" id="btnOpParentesesFecha" onclick="btnClicado(this.id)">)</button>
+            <button value="+" id="btnOperadorSoma" onclick="btnClicado(this.id)">+</button>
+            <button value="-" id="btnOperadorSubtracao" onclick="btnClicado(this.id)">-</button>
+            <button value="/" id="btnOperadorDivisao" onclick="btnClicado(this.id)">/</button>
+            <button value="*" id="btnOperadorMultiplicacao" onclick="btnClicado(this.id)">*</button>
+            <button value="%" id="btnOperadorPorcentagem" onclick="btnClicado(this.id)">%</button>
+            <button value="=" id="btnResultado" onclick="exibeResultado()">=</button>
 
         </div>
 
