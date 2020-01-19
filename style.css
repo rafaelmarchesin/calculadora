@@ -1,8 +1,10 @@
+/* Estilos Gerais */
 body{
     background-color: rgb(13, 172, 172);
     padding: 30px;
 }
 
+/* Container da Calculadora */
 #containerCalc{
     background-color: azure;
     margin: auto;
@@ -12,14 +14,36 @@ body{
     font-size: 0; /* Isso faz com que desapareça os espaços entre os botões criados pelo inline-block */
 }
 
+/* Inicia estilos do visor */
+.classVisor{
+    padding-right: 15px;
+    width: 285px;
+}
+
 #visor{
     background-color: rgb(184, 184, 184);
+    font-size: 20px;
+    text-align: right;
     width: 100%;
     height: 80px;
     margin: auto;
     margin-bottom: 5px;
 }
 
+div #visor p{
+    color: rgb(117, 117, 117);
+    margin: 0;
+}
+
+#valorGuardado{
+    padding-top: 7px;
+}
+
+#valorVisor{
+    font-size: 40px;
+}
+
+/* Inicia estilo dos botões */
 .button{
     cursor: pointer;
     display: inline-block;

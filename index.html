@@ -9,28 +9,33 @@
 </head>
 <body>
     <div id="containerCalc">
-        <div id="visor"></div>
+        <div id="visor">
+            <div id="containerValores">
+                <p class="classVisor" id="valorGuardado">0</p>
+                <p class="classVisor" id="valorVisor">0</p>
+            </div>
+        </div>
         
-        <div class="button" id="btnAbreParenteses"><span>(</span></div><!--
-        --><div class="button" id="btnFechaParenteses"><span>)</span></div><!--
-        --><div class="button" id="btnPorcentagem"><span>%</span></div><!--
-        --><div class="button" id="btnAC"><span>AC</span></div><!--
-        --><div class="button" id="btn7"><span>7</span></div><!--
-        --><div class="button" id="btn8"><span>8</span></div><!--
-        --><div class="button" id="btn9"><span>9</span></div><!--
-        --><div class="button" id="btnDivisao"><span>/</span></div><!--
-        --><div class="button" id="btn4"><span>4</span></div><!--
-        --><div class="button" id="btn5"><span>5</span></div><!--
-        --><div class="button" id="btn6"><span>6</span></div><!--
-        --><div class="button" id="btnMultiplicacao"><span>x</span></div><!--
-        --><div class="button" id="btn1"><span>1</span></div><!--
-        --><div class="button" id="btn2"><span>2</span></div><!--
-        --><div class="button" id="btn3"><span>3</span></div><!--
-        --><div class="button" id="btnSubtracao"><span>-</span></div><!--
-        --><div class="button" id="btn0"><span>0</span></div><!--
-        --><div class="button" id="btnPonto"><span>.</span></div><!--
-        --><div class="button" id="btnIgual"><span>=</span></div><!--
-        --><div class="button" id="btnSoma"><span>+</span></div>
+        <div class="button" id="btnElevado" onclick="clicaOperador(this.id)"><span>x<sup>y</sup></span></div><!--
+        --><div class="button" id="btnRaizQuadrada" onclick="clicaOperador(this.id)"><span>&radic;</span></div><!--
+        --><div class="button" id="btnPorcentagem" onclick="clicaOperador(this.id)"><span>%</span></div><!--
+        --><div class="button" id="btnAC" onclick="limpaTela()"><span>AC</span></div><!--
+        --><div class="button" id="btn7" onclick="clicaNumero(this.id)" value="7"><span>7</span></div><!--
+        --><div class="button" id="btn8" onclick="clicaNumero(this.id)" value='8'><span>8</span></div><!--
+        --><div class="button" id="btn9" onclick="clicaNumero(this.id)" value='9'><span>9</span></div><!--
+        --><div class="button" id="btnDivisao" onclick="clicaOperador(this.id)"><span>/</span></div><!--
+        --><div class="button" id="btn4" onclick="clicaNumero(this.id)" value='4'><span>4</span></div><!--
+        --><div class="button" id="btn5" onclick="clicaNumero(this.id)" value='5'><span>5</span></div><!--
+        --><div class="button" id="btn6" onclick="clicaNumero(this.id)" value='6'><span>6</span></div><!--
+        --><div class="button" id="btnMultiplicacao" onclick="clicaOperador(this.id)"><span>x</span></div><!--
+        --><div class="button" id="btn1" onclick="clicaNumero(this.id)" value='1'><span>1</span></div><!--
+        --><div class="button" id="btn2" onclick="clicaNumero(this.id)" value='2'><span>2</span></div><!--
+        --><div class="button" id="btn3" onclick="clicaNumero(this.id)" value='3'><span>3</span></div><!--
+        --><div class="button" id="btnSubtracao" onclick="clicaOperador(this.id)"><span>-</span></div><!--
+        --><div class="button" id="btn0" onclick="clicaNumero(this.id)"><span>0</span></div><!--
+        --><div class="button" id="btnPonto" onclick="clicaNumero(this.id)"><span>.</span></div><!--
+        --><div class="button" id="btnIgual" onclick="clicaIgual()"><span>=</span></div><!--
+        --><div class="button" id="btnSoma" onclick="clicaOperador(this.id)"><span>+</span></div>
     </div>
 
     <script src="script.js"></script>
