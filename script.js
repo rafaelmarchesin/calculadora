@@ -282,7 +282,7 @@ document.onkeyup=function(e){
             clicaOperador('btnSubtracao')
             break
         case 110:
-            clicaOperador('btnPonto')
+            clicaNumero('btnPonto')
             break
         case 111:
             clicaOperador('btnDivisao')
